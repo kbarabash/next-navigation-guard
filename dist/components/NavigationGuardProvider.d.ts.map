@@ -1,0 +1,1 @@
+{"version":3,"file":"NavigationGuardProvider.d.ts","sourceRoot":"","sources":["../../src/components/NavigationGuardProvider.tsx"],"names":[],"mappings":"AAEA,OAAO,KAAiB,MAAM,OAAO,CAAC;AAQtC,wBAAgB,uBAAuB,CAAC,EACtC,QAAQ,GACT,EAAE;IACD,QAAQ,EAAE,KAAK,CAAC,SAAS,CAAC;CAC3B,qBAeA"}
