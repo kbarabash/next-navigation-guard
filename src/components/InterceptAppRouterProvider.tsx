@@ -1,6 +1,7 @@
 "use client";
 
 import { AppRouterContext } from "next/dist/shared/lib/app-router-context.shared-runtime";
+import { RouterContext } from "next/dist/shared/lib/router-context.shared-runtime";
 import React, { MutableRefObject } from "react";
 import { useInterceptedAppRouter } from "../hooks/useInterceptedAppRouter";
 import { GuardDef } from "../types";

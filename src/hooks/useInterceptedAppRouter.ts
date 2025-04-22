@@ -16,7 +16,7 @@ export function useInterceptedAppRouter({
     if (!origRouter) return null;
 
     const guarded = async (
-      type: "push" | "replace" | "refresh",
+      type: any, //"push" | "replace" | "refresh" | "forward" | "back",
       to: string,
       accepted: () => void
     ) => {
@@ -32,6 +32,9 @@ export function useInterceptedAppRouter({
 
     return {
       ...origRouter,
+      prefetch: (href, ...args) => {
+        guarded("prefetch", href, () => origRouter.prefetch(href, ...args));
+      },
       push: (href, ...args) => {
         guarded("push", href, () => origRouter.push(href, ...args));
       },
